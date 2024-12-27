@@ -28,7 +28,7 @@ Zbiór danych jest bogaty i wielowymiarowy, zawiera zarówno dane kategoryczne (
 
 ### Dostosowanie metod analizy  
 Dla zebranego zbioru danych zastosuję:  
-- **Analizę eksploracyjną (EDA)**: Wizualizacje rozkładu cen, dostępności i popularności modeli w różnych segmentach rynku.  
+- **Analizę eksploracyjną (EDA)**: Wizualizacje rozkładu cen i popularności modeli w różnych segmentach rynku.  
 - **Analizę korelacji**: Zbadam zależności między parametrami technicznymi a ceną i ocenami użytkowników.  
 - **Modele rekomendacyjne**: Model na podstawie parametrów wprowadzonych przez użytkownika (np. romiar, cena, marka, klasa, wskaźnik głośności czy przyczepności na mokrej nawierzchni) zwróci 2-3 najlepiej dopasowane opony spełniające jego kryteria.  
 
