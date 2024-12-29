@@ -28,7 +28,7 @@ def scrap_oponeo(driver):
     for tyre_size in TyreSizeData.TYRE_DATA[start_index:]:
         size_str = str(tyre_size)
         print(f"Rozpoczynam scrapowanie dla rozmiaru: {size_str}")
-        oponeo_base_url = f"https://www.oponeo.pl/wybierz-opony/s=1/letnie/t=1/osobowe/r=1/{tyre_size.szerokosc}-{tyre_size.profil}-r{tyre_size.srednica}"
+        oponeo_base_url = f"https://www.oponeo.pl/wybierz-opony/s=1/letnie/t=1/osobowe/r=1/{tyre_size.width}-{tyre_size.profile}-r{tyre_size.diameter}"
 
         # otworzenie drivera jeszcze raz
         driver.close()
@@ -51,7 +51,7 @@ def scrap_oponeo(driver):
                 break
 
         # Zapis do pliku CSV
-        csv_filename = f"data/oponeo/oponeo_{tyre_size.szerokosc}_{tyre_size.profil}_{tyre_size.srednica}.csv"
+        csv_filename = f"data/oponeo/oponeo_{tyre_size.width}_{tyre_size.profile}_{tyre_size.diameter}.csv"
         df = pd.DataFrame(oponeo_tires_data)
         df.to_csv(csv_filename, index=False, encoding="utf-8")
         print(f"Dane zapisano do pliku: {csv_filename}")

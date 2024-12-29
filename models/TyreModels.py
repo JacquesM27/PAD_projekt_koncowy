@@ -2,35 +2,35 @@ class TyreSize:
     """
     Klasa reprezentująca pojedynczy rozmiar opony.
     """
-    def __init__(self, szerokosc: int, profil: int, srednica: int):
+    def __init__(self, width: int, profile: int, diameter: int):
         """
         Konstruktor klasy TyreSize.
 
-        :param szerokosc: Szerokość opony (np. 205)
-        :param profil: Profil opony (np. 55)
-        :param srednica: Średnica opony (np. 16)
+        :param width: Szerokość opony (np. 205)
+        :param profile: profile opony (np. 55)
+        :param diameter: Średnica opony (np. 16)
         """
-        self.szerokosc = szerokosc
-        self.profil = profil
-        self.srednica = srednica
+        self.width = width
+        self.profile = profile
+        self.diameter = diameter
 
     def __str__(self):
         """
         Zwraca reprezentację tekstową rozmiaru opony w formacie "205/55R16".
         """
-        return f"{self.szerokosc}/{self.profil}R{self.srednica}"
+        return f"{self.width}/{self.profile}R{self.diameter}"
 
     def to_safe_filename(self):
-        return f"{self.szerokosc}_{self.profil}R{self.srednica}"
+        return f"{self.width}_{self.profile}R{self.diameter}"
 
     def to_dict(self):
         """
         Zwraca słownikową reprezentację rozmiaru.
         """
         return {
-            "szerokość": self.szerokosc,
-            "profil": self.profil,
-            "średnica": self.srednica
+            "szerokość": self.width,
+            "profile": self.profile,
+            "średnica": self.diameter
         }
 
 class TyreSizeData:
