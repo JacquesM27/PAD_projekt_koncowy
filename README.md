@@ -1,8 +1,8 @@
-# Projekt Analizy i Rekomendacji Cen Opon
+# Projekt Analizy Opon letnich na podstawie danych z dwóch sklepów internetowych - Sklep Opon i Oponeo
 
 ## Opis projektu
 
-Projekt realizuje kompleksowe przetwarzanie danych o cenach opon, począwszy od scrapowania danych z dwóch sklepów internetowych, poprzez ich czyszczenie, analizę i modelowanie, aż po budowę aplikacji w Streamlit umożliwiającej interakcję z wynikami.
+Projekt realizuje przetwarzanie danych o cenach opon, począwszy od scrapowania danych z dwóch sklepów internetowych, poprzez ich czyszczenie, analizę i modelowanie, aż po budowę aplikacji w Streamlit umożliwiającej interakcję z wynikami.
 
 Główne funkcjonalności:
 - Scrapowanie danych ze sklepów internetowych.
@@ -48,7 +48,7 @@ Główne funkcjonalności:
 ### Uruchomienie notebooka:
 1. **Jeśli nie masz danych**:
    - Uruchom wszystkie komórki w pliku `main.ipynb` po kolei.
-   - **Uwaga**: Proces scrapowania danych może być czasochłonny.
+   - **Uwaga**: Proces scrapowania danych jest czasochłonny.
 2. **Jeśli masz dane i chcesz pominąć scrapowanie**:
    - Otwórz `main.ipynb` i uruchom sekcje w następującej kolejności:
      - **0. Importy**
