@@ -3,7 +3,6 @@ import sys
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.preprocessing import StandardScaler
 
 # Dodanie katalogu głównego projektu do ścieżki, żeby ładować dane i modele
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
